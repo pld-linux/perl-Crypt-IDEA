@@ -24,6 +24,7 @@ Release:	2
 License:	BSD-like (see COPYRIGHT)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	c9c453c402b1fc494faa9dd3be793a4a
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-5.6.0.patch
 BuildRequires:	perl-devel >= 5.6
