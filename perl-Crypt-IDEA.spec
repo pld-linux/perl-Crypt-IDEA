@@ -13,7 +13,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Crypt-IDEA - Perl interface to IDEA block cipher.
@@ -43,7 +43,6 @@ strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Crypt/IDEA/*.so
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* 
         
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
