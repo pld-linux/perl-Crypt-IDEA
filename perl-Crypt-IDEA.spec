@@ -1,23 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	IDEA
-Summary:	Crypt::IDEA Perl module
-Summary(cs):	Modul Crypt::IDEA pro Perl
-Summary(da):	Perlmodul Crypt::IDEA
-Summary(de):	Crypt::IDEA Perl Modul
-Summary(es):	Módulo de Perl Crypt::IDEA
-Summary(fr):	Module Perl Crypt::IDEA
-Summary(it):	Modulo di Perl Crypt::IDEA
-Summary(ja):	Crypt::IDEA Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Crypt::IDEA ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Crypt::IDEA
-Summary(pl):	Modu³ Perla Crypt::IDEA
-Summary(pt):	Módulo de Perl Crypt::IDEA
-Summary(pt_BR):	Módulo Perl Crypt::IDEA
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Crypt::IDEA
-Summary(sv):	Crypt::IDEA Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Crypt::IDEA
-Summary(zh_CN):	Crypt::IDEA Perl Ä£¿é
+Summary:	Crypt::IDEA - Perl interface to IDEA block cipher
+Summary(pl):	Crypt::IDEA - interfejs perlowy do szyfru blokowego IDEA
 Name:		perl-Crypt-IDEA
 Version:	1.02
 Release:	2
@@ -32,10 +17,12 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Crypt::IDEA - Perl interface to IDEA block cipher.
+Crypt::IDEA Perl extension is an implementation of the IDEA block
+cipher algorithm.
 
 %description -l pl
-Crypt::IDEA - modu³ obs³uguj±cy algorytm szyfrowania IDEA.
+Rozszerzenie Perla Crypt::IDEA stanowi implementacjê algorytmu
+szyfrowania blokowego IDEA.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
