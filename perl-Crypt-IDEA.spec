@@ -1,8 +1,23 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	IDEA
-Summary:	Crypt::IDEA perl module
-Summary(pl):	Modu³ perla Crypt::IDEA
+%define		pdir	Crypt
+%define		pnam	IDEA
+Summary:	Crypt::IDEA Perl module
+Summary(cs):	Modul Crypt::IDEA pro Perl
+Summary(da):	Perlmodul Crypt::IDEA
+Summary(de):	Crypt::IDEA Perl Modul
+Summary(es):	Módulo de Perl Crypt::IDEA
+Summary(fr):	Module Perl Crypt::IDEA
+Summary(it):	Modulo di Perl Crypt::IDEA
+Summary(ja):	Crypt::IDEA Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Crypt::IDEA ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Crypt::IDEA
+Summary(pl):	Modu³ Perla Crypt::IDEA
+Summary(pt):	Módulo de Perl Crypt::IDEA
+Summary(pt_BR):	Módulo Perl Crypt::IDEA
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Crypt::IDEA
+Summary(sv):	Crypt::IDEA Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Crypt::IDEA
+Summary(zh_CN):	Crypt::IDEA Perl Ä£¿é
 Name:		perl-Crypt-IDEA
 Version:	1.01
 Release:	6
