@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt-IDEA perl module
 Summary(pl):	Modu³ perla Crypt-IDEA
 Name:		perl-Crypt-IDEA
@@ -9,7 +10,8 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-IDEA-%{version}.tar.gz
 Patch0:		perl-Crypt-IDEA-inc.patch
 Patch1:		perl-Crypt-IDEA-paths.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -27,7 +29,7 @@ Crypt-IDEA - modu³ wspomagaj±cy algorytm IDEA.
 
 %build
 perl Makefile.PL
-make
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
