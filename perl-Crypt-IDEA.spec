@@ -2,14 +2,13 @@
 Summary:	Crypt-IDEA perl module
 Summary(pl):	Modu³ perla Crypt-IDEA
 Name:		perl-Crypt-IDEA
-Version:	1.0
-Release:	3
-Copyright:	GPL
+Version:	1.01
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-IDEA-%{version}.tar.gz
-Patch0:		perl-Crypt-IDEA-inc.patch
-Patch1:		perl-Crypt-IDEA-paths.patch
+Patch:		perl-Crypt-IDEA-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -25,7 +24,6 @@ Crypt-IDEA - modu³ wspomagaj±cy algorytm IDEA.
 %prep
 %setup -q -n Crypt-IDEA-%{version}
 %patch0 -p0
-%patch1 -p0
 
 %build
 perl Makefile.PL
