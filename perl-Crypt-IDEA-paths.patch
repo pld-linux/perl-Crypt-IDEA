@@ -1,0 +1,8 @@
+--- IDEA.pm~	Mon May  6 15:30:59 1996
++++ IDEA.pm	Sat Oct  2 22:33:55 1999
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -w
++#! /usr/bin/perl -w
+ 
+ #
+ # Copyright (C) 1995, 1996 Systemics Ltd (http://www.systemics.com/)
