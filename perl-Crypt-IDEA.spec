@@ -28,7 +28,7 @@ Crypt-IDEA - modu³ wspomagaj±cy algorytm IDEA.
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}"
+%{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
