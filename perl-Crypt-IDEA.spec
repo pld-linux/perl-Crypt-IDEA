@@ -42,7 +42,7 @@ Crypt::IDEA - modu³ obs³uguj±cy algorytm szyfrowania IDEA.
 %patch1 -p1
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
