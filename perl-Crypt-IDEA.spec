@@ -10,7 +10,7 @@ Summary(fr):	Module Perl Crypt::IDEA
 Summary(it):	Modulo di Perl Crypt::IDEA
 Summary(ja):	Crypt::IDEA Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Crypt::IDEA ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Crypt::IDEA
+Summary(nb):	Perlmodul Crypt::IDEA
 Summary(pl):	Modu³ Perla Crypt::IDEA
 Summary(pt):	Módulo de Perl Crypt::IDEA
 Summary(pt_BR):	Módulo Perl Crypt::IDEA
