@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Crypt
 %define	pnam	IDEA
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt-IDEA perl module
 Summary(pl):	Modu³ perla Crypt-IDEA
 Name:		perl-Crypt-IDEA
 Version:	1.01
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Crypt-IDEA - Perl interface to IDEA block cipher.
 Crypt-IDEA - modu³ wspomagaj±cy algorytm IDEA.
 
 %prep
-%setup -q -n Crypt-IDEA-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p0
 %patch1 -p1
 
