@@ -20,14 +20,14 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Crypt::IDEA
 Summary(zh_CN):	Crypt::IDEA Perl Ä£¿é
 Name:		perl-Crypt-IDEA
 Version:	1.02
-Release:	1
+Release:	2
 License:	BSD-like (see COPYRIGHT)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-5.6.0.patch
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,7 +42,8 @@ Crypt::IDEA - modu³ obs³uguj±cy algorytm szyfrowania IDEA.
 %patch1 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -55,8 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYRIGHT
-%{perl_sitearch}/Crypt/IDEA.pm
-%dir %{perl_sitearch}/auto/Crypt/IDEA
-%{perl_sitearch}/auto/Crypt/IDEA/IDEA.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Crypt/IDEA/IDEA.so
+%{perl_vendorarch}/Crypt/IDEA.pm
+%dir %{perl_vendorarch}/auto/Crypt/IDEA
+%{perl_vendorarch}/auto/Crypt/IDEA/IDEA.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/IDEA/IDEA.so
 %{_mandir}/man3/*
