@@ -10,6 +10,7 @@ Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-IDEA-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
+Patch1:		perl-Crypt-IDEA-5.6.0.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 %requires_eq	perl
@@ -25,6 +26,7 @@ Crypt-IDEA - modu³ wspomagaj±cy algorytm IDEA.
 %prep
 %setup -q -n Crypt-IDEA-%{version}
 %patch0 -p0
+%patch1 -p1
 
 %build
 perl Makefile.PL
