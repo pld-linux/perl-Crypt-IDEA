@@ -1,0 +1,21 @@
+diff -Naur Crypt-IDEA-1.01/IDEA.xs Crypt-IDEA-1.01patched/IDEA.xs
+--- Crypt-IDEA-1.01/IDEA.xs	Sat May 22 22:30:47 1999
++++ Crypt-IDEA-1.01patched/IDEA.xs	Sat Dec 30 06:32:53 2000
+@@ -11,6 +11,8 @@
+ 
+ MODULE = Crypt::IDEA		PACKAGE = Crypt::IDEA		PREFIX = idea_
+ 
++PROTOTYPES: DISABLE
++
+ char *
+ idea_expand_key(key)
+ 	char *	key = NO_INIT
+@@ -63,7 +65,7 @@
+ 		if (ks_len != sizeof(idea_ks))
+ 			croak("Invalid key schedule");
+ 
+-		if (output == &sv_undef)
++		if (output == &PL_sv_undef)
+ 			output = sv_newmortal();
+ 		output_len = 8;
+ 
