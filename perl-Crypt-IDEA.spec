@@ -1,9 +1,12 @@
+%define	pdir	Crypt
+%define	pnam	IDEA
 %include	/usr/lib/rpm/macros.perl
 Summary:	Crypt-IDEA perl module
 Summary(pl):	Modu³ perla Crypt-IDEA
 Name:		perl-Crypt-IDEA
 Version:	1.01
-Release:	3
+Release:	4
+
 License:	GPL
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
@@ -14,7 +17,7 @@ Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-IDEA-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-5.6.0.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
