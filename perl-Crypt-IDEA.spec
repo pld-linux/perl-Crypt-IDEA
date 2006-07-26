@@ -8,12 +8,13 @@
 Summary:	Crypt::IDEA - Perl interface to IDEA block cipher
 Summary(pl):	Crypt::IDEA - interfejs perlowy do szyfru blokowego IDEA
 Name:		perl-Crypt-IDEA
-Version:	1.06
-Release:	0.1
+Version:	1.08
+Release:	1
 License:	BSD-like (see COPYRIGHT)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f8b62256dfa2da5729b8a7e90b838689
+# Source0-md5:	6718c630fa8ac28cb989b7db763ed97c
+URL:		http://search.cpan.org/dist/Crypt-IDEA/
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-5.6.0.patch
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -45,6 +46,9 @@ szyfrowania blokowego IDEA.
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/Crypt/._test.pl
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/Crypt/IDEA.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
