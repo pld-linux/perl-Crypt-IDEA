@@ -59,6 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYRIGHT
 %{perl_vendorarch}/Crypt/IDEA.pm
 %dir %{perl_vendorarch}/auto/Crypt/IDEA
-%{perl_vendorarch}/auto/Crypt/IDEA/IDEA.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/IDEA/IDEA.so
 %{_mandir}/man3/Crypt::IDEA.3pm*
