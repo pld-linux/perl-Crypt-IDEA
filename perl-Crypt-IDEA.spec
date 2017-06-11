@@ -9,7 +9,7 @@ Summary:	Crypt::IDEA - Perl interface to IDEA block cipher
 Summary(pl.UTF-8):	Crypt::IDEA - interfejs perlowy do szyfru blokowego IDEA
 Name:		perl-Crypt-IDEA
 Version:	1.08
-Release:	14
+Release:	15
 License:	BSD-like (see COPYRIGHT)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
