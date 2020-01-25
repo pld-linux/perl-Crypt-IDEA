@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	IDEA
 Summary:	Crypt::IDEA - Perl interface to IDEA block cipher
