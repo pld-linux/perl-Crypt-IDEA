@@ -30,8 +30,8 @@ szyfrowania blokowego IDEA.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p0
-%patch1 -p1
+%patch -P0 -p0
+%patch -P1 -p1
 
 %build
 %{__perl} Makefile.PL \
