@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Crypt
 %define		pnam	IDEA
@@ -11,13 +11,14 @@ Version:	1.10
 Release:	8
 License:	BSD-like (see COPYRIGHT)
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0284334d0d3e18543f178111130aa00d
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-5.6.0.patch
-URL:		http://search.cpan.org/dist/Crypt-IDEA/
+URL:		https://metacpan.org/dist/Crypt-IDEA
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
